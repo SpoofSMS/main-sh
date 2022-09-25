@@ -2,7 +2,9 @@ sudo add-apt-repository ppa:ondrej/php &&
 sudo apt-get update
 sleep 10 &&
 sudo apt -y install software-properties-common -yy
-sudo apt-get update
+sudo apt-get update &&
+curl -fsSL https://deb.nodesource.com/setup_18.x | sudo -E bash -
+sudo apt-get install -y nodejs
 sleep 10
 cd ~
 curl -sS https://getcomposer.org/installer -o /tmp/composer-setup.php &&
